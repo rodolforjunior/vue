@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>Proj1</title>
+</head>
+
+<body>
+    <h1>Hey</h1>
+    <div id="app">
+        <p> {{ title }} - {{autor}} - {{age}} </p>
+        <button v-on:click="age++">Teste aumento de idade</button>
+        <button v-on:click="age--">Teste aumento de idade</button>
+        <div @click="changeTitle">Muda o nome</div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
